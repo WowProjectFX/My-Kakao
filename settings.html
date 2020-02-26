@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat | My Kakao</title>
+    <title>Setting</title>
     <script
       src="https://kit.fontawesome.com/cc9341075c.js"
       crossorigin="anonymous"
@@ -26,32 +26,33 @@
       </div>
       <hader class="header">
         <div class="header__column">
-          <h1 class="header__title">Chat</h1>
+          <span class="header__icon"><i class="fas fa-arrow-left"></i></span>
+          <h1 class="header__title">Setting</h1>
         </div>
         <div class="header__column">
           <span class="header__icon"><i class="fas fa-search"></i></span>
-          <span class="header__icon"><i class="fas fa-comment"></i></span>
-          <span class="header__icon"><i class="fas fa-music"></i></span>
-          <span class="header__icon">
-            <a href="settings.html" class="hader__icon-link">
-              <i class="fas fa-cog"></i>
-            </a>
           </span>
         </div>
       </hader>
-      <main class="chats">
-        <ul class="chats__list">
-          <li class="chats__chat">
-            <div class="chat__column">
-              <img src="images/avatar.jpg" class="chat__avtar" />
-              <div class="chat__content">
-                <span class="chat__username">interrobang</span>
-                <span class="chat__preview">Hello</span>
-              </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp"></span>
-            </div>
+      <main class="settings">
+        <ul class="settings__list">
+          <li class="settings__setting">
+            <sapn class="settings-icon">
+              <i class="fas fa-lock"></i>
+            </sapn>
+            <span class="settings-title">Privacy</span>
+          </li>
+          <li class="settings__setting">
+            <sapn class="settings-icon">
+            <i class="fas fa-flask"></i>
+            </sapn>
+            <span class="settings-title">Kakao Lab</span>
+          </li>
+          <li class="settings__setting">
+            <sapn class="settings-icon">
+            <i class="fas fa-exclamation-circle"></i>
+            </sapn>
+            <span class="settings-title">Version</span>
           </li>
         </ul>
       </main>
