@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat | My Kakao</title>
+    <title>Chat</title>
     <script
       src="https://kit.fontawesome.com/cc9341075c.js"
       crossorigin="anonymous"
@@ -26,59 +26,42 @@
       </div>
       <hader class="header">
         <div class="header__column">
-          <h1 class="header__title">Chat</h1>
+          <a href="index.html" class="heder__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Ahri</h1>
         </div>
         <div class="header__column">
           <span class="header__icon"><i class="fas fa-search"></i></span>
-          <span class="header__icon"><i class="fas fa-comment"></i></span>
-          <span class="header__icon"><i class="fas fa-music"></i></span>
-          <span class="header__icon">
-            <a href="settings.html" class="hader__icon-link">
-              <i class="fas fa-cog"></i>
-            </a>
           </span>
         </div>
       </hader>
-      <main class="chats">
-        <ul class="chats__list">
-          <li class="chats__chat">
-            <div class="chat__column">
-              <img src="images/avatar.jpg" class="chat__avtar" />
-              <div class="chat__content">
-                <span class="chat__username">interrobang</span>
-                <span class="chat__preview">Hello</span>
+      <main class="chat">
+        <ul class="chat__message">
+          <span class="chat__timestamp">Wednesday, Feburary 25,</span>
+          <li class="incoming-message message">
+              <img src="images/ahri.png" class="friend__avatar" />
+            <div class="message__content">
+              <span class="message__author">Ahri</span>
+              <div class="message-bubble">
+                  hi
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp"></span>
             </div>
           </li>
         </ul>
       </main>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="friends.html" class="nav__list-link">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="index.html" class="nav__list-link">
-              <i class="fas fa-comment"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="find.html" class="nav__list-link">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html" class="nav__list-link">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="chat__write">
+        <div class="chat__write-column">
+          <i class="far fa-plus-square"></i>
+        <div class="chat__write-column">
+          <input type="text" placeholder="Send messaage" class="chat__write-input">
+        </div>
+        <div class="chat__write-column">
+          <i class="far fa-smile-wink"></i>
+        </div>
+        <div class="chat__write-column">
+          <i class="fas fa-microphone"></i>
+        </div>
+      </div>
   </body>
 </html>
