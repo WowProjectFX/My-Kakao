@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/cc9341075c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -25,43 +25,63 @@
         <span class="status-bar__battery-level">100%</span>
         <span class="status-bar__time">오후 2:59</span>
       </div>
-    </div> 
+    </div>
 
-    <hader class="header"> 
-      <ul class="hader__list">
-        <li class="list-title">#뉴스</li>
-        <li class="list-title">Fun</li>
-        <li class="list-title">연예</li>
-        <li class="list-title">소포츠</li>
+    <hader class="header">
+      <ul class="header__list">
+        <li class="header__list-title">#뉴스</li>
+        <li class="header__list-title">Fun</li>
+        <li class="header__list-title">연예</li>
+        <li class="header__list-title">스포츠</li>
+        <li class="header__list-title">영화</li>
+        <li class="header__list-title">쇼핑</li>
       </ul>
     </hader>
 
     <main class="news">
       <ul class="news__list">
         <li class="news__column">
-            <span class="news-title">BBC '왜 한국에서 감염자 급증했나' 기사 전문 번역</span>
+          <a href="#" class="news-title"
+            >BBC '왜 한국에서 감염자 급증했나' 기사 전문 번역</a
+          >
         </li>
         <li class="news__column">
-            <span class="news-title">대전, 확진 3명 추가..간호사 감염 성세병원 코호트 격리(종합)</span>
+          <a href="#" class="news-title"
+            >대전, 확진 3명 추가..간호사 감염 성세병원 코호트 격리(종합)</a
+          >
         </li>
         <li class="news__column">
-            <span class="news-title">잇따른 확진에 대구시청 '비상'..밀접접촉자 더 있어</span>
+          <a href="#" class="news-title"
+            >잇따른 확진에 대구시청 '비상'..밀접접촉자 더 있어</a
+          >
         </li>
         <li class="news__column">
-            <span class="news-title">군, 코로나19 확진자 20명..9천570여명 격리 </span>
+          <a href="#" class="news-title"
+            >군, 코로나19 확진자 20명..9천570여명 격리
+          </a>
         </li>
         <li class="news__column">
-            <span class="news-title">문 대통령 "국민 손에 마스크 들어가지 않으면 대책 소용 없어"</span>
+          <a href="#" class="news-title"
+            >문 대통령 "국민 손에 마스크 들어가지 않으면 대책 소용 없어"</a
+          >
         </li>
+      </ul>
+
       <div class="news__pictures">
-        <img src="" alt="" class="news__picture">
-        <img src="" alt="" class="news__picture">
+        <div class="news__column">
+          <img src="/images/new1.png" alt="" class="news__picture" />
+          <span>'맨날 품절' 마스크 이렇게 하면 살 수 있다</span>
+        </div>
+        <div class="news__column">
+          <img src="/images/new2.png" alt="" class="news__picture" />
+          <span>[오피셜] 'FFP 징계' 맨시티, 공식 항소..</span>
+        </div>
       </div>
     </main>
 
     <div class="search-bar">
       <div class="search-bar__wrapper">
-        <input type="text" placeholder="# 검색어를 입력해주세요" />
+        <input type="text" placeholder="# 검색어를 입력해주세요" size="40" />
         <i class="fas fa-search"></i>
       </div>
     </div>
@@ -90,6 +110,5 @@
         </li>
       </ul>
     </nav>
-
   </body>
 </html>
