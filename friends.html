@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/cc9341075c.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="status-bar">
@@ -24,157 +25,160 @@
         <span class="status-bar__battery-level">100%</span>
         <span class="status-bar__time">오후 2:59</span>
       </div>
-      <hader class="header">
-        <div class="header__column">
-          <h1 class="header__title">Friends</h1>
-        </div>
-        <div class="header__column">
-          <span class="header__icon"><i class="fas fa-search"></i></span>
-          <span class="header__icon"><i class="fas fa-comment"></i></span>
-          <span class="header__icon"><i class="fas fa-music"></i></span>
-
-          </span>
-        </div>
-      </hader>
-      <main class="friends">
-        <ul class="friends_list">
-          <li class="friends__friend friend friend--lg">
-            <img src="images/avatar.png" class="friend__avatar" />
-            <div class="friend__column">
-              <div class="friend__content">
-                <span class="friend__username">interrobang</span>
-                <span class="friend__status">interrobang</span>
-              </div>
-            </div>
-            <div class="friend__column"></div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="birthday__title">Friends with Birthdays</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/birthday.png" class="friend__avatar" />
-            </div>
-            <div class="friend__column">
-              <span class="friend__subtitle">View more birthdays</span>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="channel__title">Channel</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/channel.png" class="friend__avatar" />
-            </div>
-            <div class="friend__column">
-              <span class="friend__subtitle">View more birthdays</span>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="friends__title">Friends</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/ahri.png" class="friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__username">Ahri</span>
-                <span class="friend__status">The Nine-Tailed Fox</span>
-              </div>
-            </div>
-            <div class="friend__column">
-              <div class="friend__now-listening">
-                <span>
-                  K/DA - POP/STARS
-                </span>
-                <i class="fas fa-play"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="friends__title">Friends</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/azir.png" class="friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__username">azir</span>
-                <span class="friend__status">The Emperor of the Sands</span>
-              </div>
-            </div>
-            <div class="friend__column"></div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="friends__title">Friends</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/brand.png" class="friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__username">Brand</span>
-                <span class="friend__status">The Burning Vengeance</span>
-              </div>
-            </div>
-            <div class="friend__column"></div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="friends__title">Friends</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/ezreal.png" class="friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__username">Ezreal</span>
-                <span class="friend__status">The Prodigal Explorer</span>
-              </div>
-            </div>
-            <div class="friend__column"></div>
-          </li>
-        </ul>
-
-        <ul class="friends_list">
-          <span class="friends__title">Friends</span>
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/velkoz.png" class="friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__username">Vel'Koz</span>
-                <span class="friend__status">The Eye of the Void</span>
-              </div>
-            </div>
-            <div class="friend__column"></div>
-          </li>
-        </ul>
-      </main>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="friends.html" class="nav__list-link">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="index.html" class="nav__list-link">
-              <i class="fas fa-comment"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="find.html" class="nav__list-link">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html" class="nav__list-link">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </div>
+
+    <hader class="header">
+      <div class="header__column">
+        <h1 class="header__title">Friends</h1>
+      </div>
+      <div class="header__column">
+        <span class="header__icon"><i class="fas fa-search"></i></span>
+        <span class="header__icon"><i class="fas fa-comment"></i></span>
+        <span class="header__icon"><i class="fas fa-music"></i></span>
+        </span>
+      </div>
+    </hader>
+
+    <main class="friends">
+      <ul class="friends_list">
+        <li class="friends__friend friend friend--lg">
+          <img src="images/avatar.png" class="friend__avatar" />
+          <div class="friend__column">
+            <div class="friend__content">
+              <span class="friend__username">interrobang</span>
+              <span class="friend__status">interrobang</span>
+            </div>
+          </div>
+          <div class="friend__column"></div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="birthday__title">Friends with Birthdays</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/birthday.png" class="friend__avatar" />
+          </div>
+          <div class="friend__column">
+            <span class="friend__subtitle">View more birthdays</span>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="channel__title">Channel</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/channel.png" class="friend__avatar" />
+          </div>
+          <div class="friend__column">
+            <span class="friend__subtitle">View more birthdays</span>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="friends__title">Friends</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/ahri.png" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__username">Ahri</span>
+              <span class="friend__status">The Nine-Tailed Fox</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                K/DA - POP/STARS
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="friends__title">Friends</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/azir.png" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__username">azir</span>
+              <span class="friend__status">The Emperor of the Sands</span>
+            </div>
+          </div>
+          <div class="friend__column"></div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="friends__title">Friends</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/brand.png" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__username">Brand</span>
+              <span class="friend__status">The Burning Vengeance</span>
+            </div>
+          </div>
+          <div class="friend__column"></div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="friends__title">Friends</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/ezreal.png" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__username">Ezreal</span>
+              <span class="friend__status">The Prodigal Explorer</span>
+            </div>
+          </div>
+          <div class="friend__column"></div>
+        </li>
+      </ul>
+
+      <ul class="friends_list">
+        <span class="friends__title">Friends</span>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/velkoz.png" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__username">Vel'Koz</span>
+              <span class="friend__status">The Eye of the Void</span>
+            </div>
+          </div>
+          <div class="friend__column"></div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
   </body>
 </html>
