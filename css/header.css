@@ -14,11 +14,11 @@
 
 .header .header__icon {
   font-size: 20px;
-  margin-left: 20px;
+  margin: 0px 10px;
   cursor: pointer;
 }
 
-.header .header__header-column {
+.header .header__column {
   display: flex;
   align-items: center;
 }

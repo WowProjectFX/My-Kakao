@@ -1,0 +1,12 @@
+.settings .settings__list {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.settings .settings__setting {
+  margin: 26px 0px;
+}
+
+.settings__setting i {
+  margin-right: 20px;
+}

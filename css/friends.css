@@ -7,7 +7,7 @@
 .friend .friend__column {
   display: flex;
   align-items: center;
-  margin: 15px 0px;
+  margin: 10px 0px;
 }
 
 .friend__content {
@@ -23,8 +23,8 @@
 }
 
 .friend__avatar-lg {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
 
