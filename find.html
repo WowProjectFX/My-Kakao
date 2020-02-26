@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat | My Kakao</title>
+    <title>Find</title>
     <script
       src="https://kit.fontawesome.com/cc9341075c.js"
       crossorigin="anonymous"
@@ -24,37 +24,42 @@
         <span class="status-bar__battery-level">100%</span>
         <span class="status-bar__time">오후 2:59</span>
       </div>
-      <hader class="header">
-        <div class="header__column">
-          <h1 class="header__title">Chat</h1>
-        </div>
-        <div class="header__column">
-          <span class="header__icon"><i class="fas fa-search"></i></span>
-          <span class="header__icon"><i class="fas fa-comment"></i></span>
-          <span class="header__icon"><i class="fas fa-music"></i></span>
-          <span class="header__icon">
-            <a href="settings.html" class="hader__icon-link">
-              <i class="fas fa-cog"></i>
-            </a>
-          </span>
-        </div>
-      </hader>
-      <main class="chats">
-        <ul class="chats__list">
-          <li class="chats__chat">
-            <div class="chat__column">
-              <img src="images/avatar.jpg" class="chat__avtar" />
-              <div class="chat__content">
-                <span class="chat__username">interrobang</span>
-                <span class="chat__preview">Hello</span>
-              </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp"></span>
-            </div>
-          </li>
+      <hader class="header"> 
+        <ul class="hader__list">
+          <li class="list-title">#뉴스</li>
+          <li class="list-title">Fun</li>
+          <li class="list-title">연예</li>
+          <li class="list-title">소포츠</li>
         </ul>
+      </hader>
+      <main class="news">
+        <ul class="news__list">
+          <li class="news__column">
+              <span class="news-title">BBC '왜 한국에서 감염자 급증했나' 기사 전문 번역</span>
+          </li>
+          <li class="news__column">
+              <span class="news-title">대전, 확진 3명 추가..간호사 감염 성세병원 코호트 격리(종합)</span>
+          </li>
+          <li class="news__column">
+              <span class="news-title">잇따른 확진에 대구시청 '비상'..밀접접촉자 더 있어</span>
+          </li>
+          <li class="news__column">
+              <span class="news-title">군, 코로나19 확진자 20명..9천570여명 격리 </span>
+          </li>
+          <li class="news__column">
+              <span class="news-title">문 대통령 "국민 손에 마스크 들어가지 않으면 대책 소용 없어"</span>
+          </li>
+        <div class="news__pictures">
+          <img src="" alt="" class="news__picture">
+          <img src="" alt="" class="news__picture">
+        </div>
       </main>
+      <div class="search-bar">
+        <div class="search-bar__wrapper">
+          <input type="text" placeholder="# 검색어를 입력해주세요" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
