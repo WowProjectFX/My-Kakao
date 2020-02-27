@@ -11,40 +11,37 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <i class="fas fa-cloud"></i>
-        <i class="fab fa-telegram-plane"></i>
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <i class="fas fa-cloud"></i>
+          <i class="fab fa-telegram-plane"></i>
+        </div>
+        <div class="status-bar__column">
+          <i class="fab fa-bluetooth-b"></i>
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <span class="status-bar__time">오후 2:59</span>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fab fa-bluetooth-b"></i>
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <span class="status-bar__time">오후 2:59</span>
-      </div>
-    </div>
 
-    <header class="header">
-      <ul class="header__list">
-        <li class="header__list-title">#뉴스</li>
-        <li class="header__list-title">Fun</li>
-        <li class="header__list-title">연예</li>
-        <li class="header__list-title">스포츠</li>
-        <li class="header__list-title">영화</li>
-        <li class="header__list-title">쇼핑</li>
-      </ul>
-    </header>
+      <header class="header">
+        <ul class="header__list">
+          <li class="header__list-title">#뉴스</li>
+          <li class="header__list-title">Fun</li>
+          <li class="header__list-title">연예</li>
+          <li class="header__list-title">스포츠</li>
+          <li class="header__list-title">영화</li>
+          <li class="header__list-title">쇼핑</li>
+        </ul>
+      </header>
+    </div>
 
     <main class="news">
       <ul class="news__list">
-        <li class="news__column">
-          <a href="#" class="news-title"
-            >BBC '왜 한국에서 감염자 급증했나' 기사 전문 번역</a
-          >
-        </li>
         <li class="news__column">
           <a href="#" class="news-title"
             >대전, 확진 3명 추가..간호사 감염 성세병원 코호트 격리(종합)</a
@@ -110,5 +107,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small! 😱</span>
+    </div>
   </body>
 </html>

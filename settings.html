@@ -11,35 +11,37 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <i class="fas fa-cloud"></i>
-        <i class="fab fa-telegram-plane"></i>
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <i class="fas fa-cloud"></i>
+          <i class="fab fa-telegram-plane"></i>
+        </div>
+        <div class="status-bar__column">
+          <i class="fab fa-bluetooth-b"></i>
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <span class="status-bar__time">오후 2:59</span>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fab fa-bluetooth-b"></i>
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <span class="status-bar__time">오후 2:59</span>
-      </div>
-    </div>
 
-    <header class="header">
-      <div class="header__column">
-        <a href="more.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">Settings</h1>
-      </div>
-      <div class="header__column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-      </div>
-    </header>
+      <header class="header">
+        <div class="header__column">
+          <a href="more.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Settings</h1>
+        </div>
+        <div class="header__column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </header>
+    </div>
 
     <main class="settings">
       <ul class="settings__list">
@@ -88,5 +90,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small! 😱</span>
+    </div>
   </body>
 </html>

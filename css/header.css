@@ -1,10 +1,17 @@
+.header-wrapper {
+  width: 470px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding: 10px 10px;
+  z-index: 1;
+  background-color: #1e1411;
+}
+
 .header {
-  width: 100%;
-  top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 50px 0px;
 }
 
 .header .header__title {
