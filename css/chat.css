@@ -1,0 +1,126 @@
+.chat .chat__timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.chat__message .incoming-message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.message img {
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
+}
+
+.message__content {
+  margin: 10px 0px;
+}
+
+.message .message-author {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.message-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 5px;
+}
+
+.incoming-message .message-bubble {
+  border-radius: 0px 25px 25px 25px;
+  border: 1px solid white;
+}
+
+.chat__message .sent-message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.chat__message .mesaage-count {
+  position: absolute;
+  color: #d0c640;
+  bottom: 15px;
+  right: 160px;
+}
+
+.sent-message .message-bubble {
+  border-radius: 25px 0px 25px 25px;
+  color: #d0c640;
+  border: 1px solid #d0c640;
+}
+
+.chat__write {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #080000;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chat__write-column:first-child {
+  color: #d0c640;
+}
+
+@keyframes incomingAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes incomingAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: incomingAnim 0.5s ease-out forwards;
+}
+
+@keyframes sentAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sent-message {
+  animation: sentAnimation 0.5s ease-out forwards;
+}

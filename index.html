@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/cc9341075c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -40,23 +40,77 @@
 
     <main class="chats">
       <ul class="chats__list">
-        <li class="chats__chat">
+        <li class="chats__chat chat">
           <a href="chat.html">
-          <div class="chat__column">
-            <img src="images/velkoz.png" class="chat__avtar" />
-            <div class="chat__content">
-              <span class="chat__username">interrobang</span>
-              <span class="chat__preview">Hello</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/ahri.png" class="friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Ahri
+                  </span>
+                  <span class="friend__bottom-text">
+                    I,m find, and you?
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  2:00 PM
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="chat__column">
-            <span class="chat__timestamp"></span>
-          </div>
+          </a>
         </li>
-      </a>
+
+        <li class="chats__chat chat">
+          <a href="#">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/velkoz.png" class="friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Velkoz
+                  </span>
+                  <span class="friend__bottom-text">
+                    !
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  Yesterday
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="chats__chat chat">
+          <a href="#">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/ezreal.png" class="friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    ezreal
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  Februry 25
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
       </ul>
     </main>
-    
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
@@ -81,6 +135,5 @@
         </li>
       </ul>
     </nav>
-
   </body>
 </html>
