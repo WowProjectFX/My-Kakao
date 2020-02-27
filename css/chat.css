@@ -1,3 +1,7 @@
+main {
+  animation: none;
+}
+
 .chat .chat__timestamp {
   display: flex;
   justify-content: center;
@@ -22,7 +26,7 @@
 
 .message img {
   margin-right: 10px;
-  animation: spin 1s linear infinite;
+  animation: spin 1s linear 10s infinite;
 }
 
 .message__content {
@@ -68,31 +72,54 @@
   border: 1px solid #d0c640;
 }
 
-.chat__write {
+.chat__write-container {
   position: fixed;
   bottom: 0px;
-  left: 0px;
-  background-color: #080000;
-  height: 50px;
-  width: 100%;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.chat__write-column:first-child {
+.chat__icon-left {
+  position: absolute;
+  left: 10px;
+}
+
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
+}
+
+.chat__write {
+  margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.chat__write:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-80px);
+  border-radius: 40px;
+}
+
+.chat__icon {
+  font-size: 18px;
+  transition: opacity 0.3s ease-in-out;
   color: #d0c640;
 }
-
-@keyframes incomingAnim {
-  from {
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
 }
 
 @keyframes incomingAnim {
@@ -107,7 +134,7 @@
 }
 
 .incoming-message {
-  animation: incomingAnim 0.5s ease-out forwards;
+  animation: incomingAnim 1s ease-out 2s;
 }
 
 @keyframes sentAnimation {
@@ -122,5 +149,21 @@
 }
 
 .sent-message {
-  animation: sentAnimation 0.5s ease-out forwards;
+  animation: sentAnimation 1s ease-out;
+}
+
+.chat__message li:nth-child(2) {
+  animation-delay: 2s;
+}
+.chat__message li:nth-child(3) {
+  animation-delay: 3s;
+}
+.chat__message li:nth-child(4) {
+  animation-delay: 4s;
+}
+.chat__message li:nth-child(5) {
+  animation-delay: 5s;
+}
+.chat__message li:nth-child(6) {
+  animation-delay: 6s;
 }
