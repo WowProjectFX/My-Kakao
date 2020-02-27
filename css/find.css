@@ -29,22 +29,26 @@
 
 .news__pictures .news__column {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .news__picture {
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
   height: 150px;
   margin-bottom: 10px;
 }
 
 .search-bar {
+  position: fixed;
   width: 100%;
   height: 50px;
   background-color: #fff;
   margin: 10px 0px;
+  bottom: 50px;
   left: 0px;
   border-radius: 10px 10px 0px 0px;
   display: flex;
@@ -63,6 +67,6 @@
 .search-bar__wrapper i {
   position: absolute;
   color: #d0c640;
-  left: 400px;
-  top: 565px;
+  right: 60px;
+  top: 20px;
 }
